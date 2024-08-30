@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <p>Nhập năm cần kiểm tra:</p>
+    <input type="text" name="txtName" id="txtName">
+    <input type="button" value="Kiểm tra" onclick="kiemTraNamNhuan()" />
+
+</p>
+    <script language="javascript">
+        function kiemTraNamNhuan() {
+            var nam = document.getElementById("txtName").value;
+
+            // nếu năm chia hết cho 100
+            // thì kiểm tra nó có chia hết cho 400 hay không
+            if (nam % 100 == 0) { 
+                // nêu chia hết cho 400 thì là năm nhuận
+                if (nam % 400 == 0) {
+                    alert('Năm ' + nam + ' là năm nhuận');
+                } else { 
+                    // ngược lại không phải năm nhuận
+                    alert('Năm ' + nam + ' không phải năm nhuận');
+                }
+            } else if (nam % 4 == 0) { 
+                // trường hợp chia hết cho 4 thì là năm nhuận
+                alert('Năm ' + nam + ' là năm nhuận');
+            } else { 
+                // cuối cùng trường hợp không phải năm nhuận
+                alert('Năm ' + nam + ' không phải là năm nhuận');
+            }
+        }
+    </script>
+
+</body>
+</html>

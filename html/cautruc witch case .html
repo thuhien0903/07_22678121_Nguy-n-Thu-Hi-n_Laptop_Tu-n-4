@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script language="javascript" type="text/javascript">
+var t= prompt("Nhập vào một tháng của năm không nhuận: ");
+
+switch (eval(t)){
+    case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+        alert(" Tháng " + t + " có 31 ngày");
+        break;
+    case 2:
+        alert(" Tháng " + t + " có 28 ngày");
+        break;
+    case 4: case 6: case 9: case 11:
+        alert("Tháng " + t + " có 30 ngày");
+        break;
+    default:
+        alert("Không phải là tháng của năm");
+}
+</script>
+</head>
+
+<body>
+
+</body>
+</html>
